@@ -8,20 +8,30 @@ An LLM app made with Ollama, LangChain and Streamlit.
 
 2. Download LLaMa 3 
 
-`ollama pull llama3`
+```
+ollama pull llama3
+```
 
 3. Clone the repository
 
 4. Create a Virtual Environment and activate it
 
-`conda create --name <my-env>`
+```
+conda create --name <my-env>
+```
 
-`conda activate <my-env>`
+```
+conda activate <my-env>
+```
 
 5. Install dependencies
 
-`pip install -r requirements.txt`
+```
+pip install -r requirements.txt
+```
 
 6. Run the app
 
-`streamlit run app.py`
+```
+streamlit run app.py
+```
