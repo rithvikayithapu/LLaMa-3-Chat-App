@@ -30,7 +30,19 @@ conda activate <my-env>
 pip install -r requirements.txt
 ```
 
-6. Run the app
+6. Create a project on [Google Cloud Console](https://console.cloud.google.com/welcome) and get an [API Key](https://console.cloud.google.com/apis/credentials). Create a new file named .env and add this API key.
+
+```
+GOOGLE_API_KEY=your-google-api-key
+```
+
+7. Create a Google Custom Search Engine key from [Programmable Search Engine](https://programmablesearchengine.google.com/controlpanel/create). Select "Search the entire web" under What to Search? Add this to .env file
+
+```
+GOOGLE_CSE_ID=your-google-cse-key
+```
+
+8. Run the app
 
 ```
 streamlit run app.py

@@ -22,15 +22,13 @@ if __name__ == "__main__":
         description="Search Google for recent results.",
         func=google_search.run
     )
-
-    '''
-    chat_model contains the LLaMa model that generates the result.
-    prompt contains instructions for how the query should be processed. 
-    agent binds the chat_model, prompt and Google Search tool together.
-    agent_executor is used to invoke the agent on any given input.
-    To maintain context between messages agent_with_chat_history is used.
-    The chat history is retained until the Streamlit session is active.
-    '''
+    
+    # chat_model contains the LLaMa model that generates the result.
+    # prompt contains instructions for how the query should be processed. 
+    # agent binds the chat_model, prompt and Google Search tool together.
+    # agent_executor is used to invoke the agent on any given input.
+    # To maintain context between messages agent_with_chat_history is used.
+    # The chat history is retained until the Streamlit session is active.
     chat_model = ChatOllama(model="llama3", temperature=0.5)
 
     prompt = hub.pull("hwchase17/structured-chat-agent")
