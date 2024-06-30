@@ -1,0 +1,10 @@
+langchain
+langchain-huggingface
+langchain_community
+langchain-google-community
+streamlit
+langchainhub
+google-api-python-client
+python-dotenv
+huggingface_hub
+transformers
